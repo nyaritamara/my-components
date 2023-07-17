@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+    padding: 1rem;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-family: 'Space Mono', monospace;
+    padding: .5rem 1rem;
+}
+
+nav a:hover {
+    color: hsl(0, 0%, 77%);
+    transition: color .15s ease-in-out;
+}
+
+nav a.signup {
+    border: 1px solid #505050;
+    border-radius: 9999px;
+}
+
+
+nav a.signup:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (min-width: 768px) {
+    nav {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 100vw;
+    }
+    
+    nav a {
+        float: right;
+        width: 10vw;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    nav a.active {
+        float: none;
+        width: 15vw;
+        top: 0px;
+        left: 0px;
+    }
+
+      /* Clearfix */
+    nav::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
+
+
+
+
+div {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.mind {
+    font-family: 'Space Mono', monospace;
+    margin: .5rem;
+}
+
+@media (min-width: 768px) {
+        .mind {
+        display: block;        
+        position: relative;        
+        width: 60vw;
+        margin: auto;
+        top: 5rem;
+    }
+}
